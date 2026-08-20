@@ -603,7 +603,7 @@ class Decoder(nn.Module):
             )
         )
 
-        blocks.append(nn.Sigmoid())  # 添加这一行
+        blocks.append(nn.Sigmoid()) 
         self.blocks = nn.ModuleList(blocks)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
